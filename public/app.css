@@ -1,0 +1,81 @@
+/* Style untuk Hero Section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Sesuaikan dengan tinggi yang diinginkan */
+    color: #fff; /* Warna teks */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Style untuk Navbar */
+.navbar {
+    background-color: #333; /* Warna latar belakang navbar */
+    color: #fff; /* Warna teks navbar */
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: #fff; /* Warna teks link navbar */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Style untuk List/Produk Section */
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products .card {
+    margin-bottom: 20px;
+}
+
+.products .card img {
+    width: 100%;
+    height: auto;
+}
+
+.products .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.products .card-text {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .products .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+/* admin.css */
+
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0eaea;
+}
+
+header {
+    background-color:  #22d2cf;
+    color: #160606;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color:  #22d2cf;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f2eeee;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid rgb(6, 16, 6); 
+    background-color: rgb(143, 164, 67);
+    border-radius: 8px;
+   
+    
+}
+
+nav ul li a:hover {
+    background-color:  #3ab842;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    background-color: #22d2cf;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f5f5;
+    color: #100909;
+}
+
+table td a {
+    color: #24ec09;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid rgb(177, 180, 177); 
+    background-color: rgb(12, 12, 12);
+    border-radius: 8px;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+table td form {
+    display: inline;
+    margin: 0;
+}
+
+table td form button {
+    color: #ec0909;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid rgb(177, 180, 177); 
+    background-color: rgb(16, 22, 5);
+    border-radius: 8px;
+}
+
+table td form button:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

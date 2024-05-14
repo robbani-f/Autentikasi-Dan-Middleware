@@ -1,0 +1,160 @@
+/* CSS untuk navbar */
+
+nav {
+    background-color: #22d2cf;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-items li.border-item {
+    border: 1px solid rgb(177, 180, 177); 
+    background-color: rgb(48, 108, 57);
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+
+.navbar-items li {
+    margin-right: 20px;
+    
+}
+
+.navbar-items li:last-child {
+    margin-right: 0;
+}
+
+.merchant-item {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+
+/* CSS untuk halaman pengguna admin */
+.admin-container {
+    border: 2px solid #0d9276;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+/* CSS untuk halaman pengguna merchant */
+.merchant-container {
+    border: 2px solid #0d9276;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: auto; /* Menggeser ke pojok kanan */
+}
+
+/* CSS dari kode awal */
+body {
+    margin: 0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: sticky;
+    background-color: #20c0cb;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+main {
+    padding: 25px 20px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: center; /* Pusatkan konten */
+}
+
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid rgba(29, 143, 213, 0.4);
+    box-shadow: 2px 2px 3px rgba(71, 77, 75, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.keterangan {
+    margin: 0 10px 10px 10px;
+}
+
+.keterangan button[type="submit"] {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #0d9276;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.harga {
+    font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+    header img {
+        width: 60px;
+    }
+}
